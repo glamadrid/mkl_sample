@@ -1,0 +1,110 @@
+<edmx:Edmx
+    xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+    xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+    xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZHCP_CLIENTE_APP_SRV" xml:lang="es" sap:schema-version="1">
+            <EntityType Name="TtMaster" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="GoMaster"/>
+                </Key>
+                <Property Name="GoMaster" Type="Edm.String" Nullable="false" MaxLength="255" sap:label="Cliente(15) Password(15) Fecha(8) Modulo(3) Filtro(214)"/>
+                <Property Name="Text01" Type="Edm.String" Nullable="false" MaxLength="25" sap:label="TEXT01" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Text02" Type="Edm.String" Nullable="false" MaxLength="25" sap:label="TEXT02" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Text03" Type="Edm.String" Nullable="false" MaxLength="25" sap:label="TEXT03" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Text04" Type="Edm.String" Nullable="false" MaxLength="25" sap:label="TEXT04" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Text05" Type="Edm.String" Nullable="false" MaxLength="25" sap:label="TEXT05" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Text06" Type="Edm.String" Nullable="false" MaxLength="50" sap:label="TEXT06" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Text07" Type="Edm.String" Nullable="false" MaxLength="50" sap:label="TEXT07" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Text08" Type="Edm.String" Nullable="false" MaxLength="50" sap:label="TEXT08" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Text09" Type="Edm.String" Nullable="false" MaxLength="225" sap:label="TEXT09" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Text10" Type="Edm.String" Nullable="false" MaxLength="225" sap:label="TEXT10" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Curr01" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:label="Importe ML" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Curr02" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:label="Importe ML" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Curr03" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:label="Importe ML" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Curr04" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:label="Importe ML" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Curr05" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:label="Importe ML" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Curr06" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:label="Importe ML" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Curr07" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:label="Importe ML" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Curr08" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:label="Importe ML" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Curr09" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:label="Importe ML" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Curr10" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:label="Importe ML" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quan01" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:label="Ctd.en UME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quan02" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:label="Ctd.en UME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quan03" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:label="Ctd.en UME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quan04" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:label="Ctd.en UME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quan05" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:label="Ctd.en UME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quan06" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:label="Ctd.en UME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quan07" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:label="Ctd.en UME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quan08" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:label="Ctd.en UME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quan09" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:label="Ctd.en UME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quan10" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:label="Ctd.en UME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <NavigationProperty Name="CabeceraDetaleNav" Relationship="ZHCP_CLIENTE_APP_SRV.CabeceraDetalle" FromRole="FromRole_CabeceraDetalle" ToRole="ToRole_CabeceraDetalle"/>
+            </EntityType>
+            <EntityType Name="TtDetail" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="GoDetail"/>
+                    <PropertyRef Name="Item"/>
+                </Key>
+                <Property Name="GoDetail" Type="Edm.String" Nullable="false" MaxLength="255" sap:label="Cliente(15) Password(15) Fecha(8) Modulo(3) Filtro(214)"/>
+                <Property Name="Item" Type="Edm.String" Nullable="false" MaxLength="10" sap:label="Item" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Text01" Type="Edm.String" Nullable="false" MaxLength="25" sap:label="TEXT01" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Text02" Type="Edm.String" Nullable="false" MaxLength="25" sap:label="TEXT02" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Text03" Type="Edm.String" Nullable="false" MaxLength="25" sap:label="TEXT03" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Text04" Type="Edm.String" Nullable="false" MaxLength="25" sap:label="TEXT04" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Text05" Type="Edm.String" Nullable="false" MaxLength="25" sap:label="TEXT05" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Text06" Type="Edm.String" Nullable="false" MaxLength="50" sap:label="TEXT06" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Text07" Type="Edm.String" Nullable="false" MaxLength="50" sap:label="TEXT07" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Text08" Type="Edm.String" Nullable="false" MaxLength="50" sap:label="TEXT08" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Text09" Type="Edm.String" Nullable="false" MaxLength="225" sap:label="TEXT09" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Text10" Type="Edm.String" Nullable="false" MaxLength="225" sap:label="TEXT10" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Text11" Type="Edm.String" Nullable="false" MaxLength="225" sap:label="TEXT11" sap:creatable="false" sap:updatable="false" sap:sortable="false"/>
+                <Property Name="Curr01" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:label="Importe ML" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Curr02" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:label="Importe ML" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Curr03" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:label="Importe ML" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Curr04" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:label="Importe ML" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Curr05" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:label="Importe ML" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Curr06" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:label="Importe ML" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Curr07" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:label="Importe ML" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Curr08" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:label="Importe ML" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Curr09" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:label="Importe ML" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Curr10" Type="Edm.Decimal" Nullable="false" Precision="14" Scale="3" sap:label="Importe ML" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quan01" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:label="Ctd.en UME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quan02" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:label="Ctd.en UME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quan03" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:label="Ctd.en UME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quan04" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:label="Ctd.en UME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quan05" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:label="Ctd.en UME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quan06" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:label="Ctd.en UME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quan07" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:label="Ctd.en UME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quan08" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:label="Ctd.en UME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quan09" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:label="Ctd.en UME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="Quan10" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3" sap:label="Ctd.en UME" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+            </EntityType>
+            <Association Name="CabeceraDetalle" sap:content-version="1">
+                <End Type="ZHCP_CLIENTE_APP_SRV.TtMaster" Multiplicity="1" Role="FromRole_CabeceraDetalle"/>
+                <End Type="ZHCP_CLIENTE_APP_SRV.TtDetail" Multiplicity="*" Role="ToRole_CabeceraDetalle"/>
+                <ReferentialConstraint>
+                    <Principal Role="FromRole_CabeceraDetalle">
+                        <PropertyRef Name="GoMaster"/>
+                    </Principal>
+                    <Dependent Role="ToRole_CabeceraDetalle">
+                        <PropertyRef Name="GoDetail"/>
+                    </Dependent>
+                </ReferentialConstraint>
+            </Association>
+            <EntityContainer Name="ZHCP_CLIENTE_APP_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json">
+                <EntitySet Name="TtMasterSet" EntityType="ZHCP_CLIENTE_APP_SRV.TtMaster" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="TtDetailSet" EntityType="ZHCP_CLIENTE_APP_SRV.TtDetail" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <AssociationSet Name="CabeceraDetalleSet" Association="ZHCP_CLIENTE_APP_SRV.CabeceraDetalle" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1">
+                    <End EntitySet="TtMasterSet" Role="FromRole_CabeceraDetalle"/>
+                    <End EntitySet="TtDetailSet" Role="ToRole_CabeceraDetalle"/>
+                </AssociationSet>
+            </EntityContainer>
+            <atom:link
+                xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZHCP_CLIENTE_APP_SRV/$metadata"/>
+                <atom:link
+                    xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZHCP_CLIENTE_APP_SRV/$metadata"/>
+                </Schema>
+            </edmx:DataServices>
+        </edmx:Edmx>

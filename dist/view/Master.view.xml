@@ -1,0 +1,52 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:table="sap.ui.table" xmlns="sap.m" xmlns:semantic="sap.m.semantic"
+	controllerName="com.sap.appcelima.controller.Master" xmlns:l="sap.ui.layout" xmlns:form="sap.ui.layout.form">
+	
+	<App id="appdeclientes" >
+		
+		<Page id="Login" navButtonPress="onNavBack" showNavButton="false" title="{Text02}" busy="{detailView>/busy}"
+			busyIndicatorDelay="{detailView>/delay}">
+			<content>
+				<form:SimpleForm editable="true" id="__form0" width="auto" maxContainerCols="3" layout="ResponsiveGridLayout" labelSpanL="2" labelSpanM="2"
+					emptySpanL="0" emptySpanM="0" columnsL="2" columnsM="2">
+					<form:title>
+						<core:Title></core:Title>
+					</form:title>
+					<FlexBox width="100%" id="__box0" direction="Column" alignItems="Center" justifyContent="SpaceAround">
+						<items>
+							<Image width="150px" height="90px" id="__image0" src="imagen/logo.png" alt="alttextimage" visible="true" backgroundPosition="-74px -14px"/>
+							<Label text="APP Celima" width="100%" id="__label1" design="Bold" textAlign="Center"/>
+							<Input width="auto" id="iduser" required="_onLogintrue" placeholder="Usuario"/>
+							<Input width="auto" id="idpsw" placeholder="Contraseña" type="Password"/>
+							<Button text="Acceder" width="auto" id="__button0" press="_onLogin"/>
+						</items>
+					</FlexBox>
+					<form:title>
+						<core:Title></core:Title>
+					</form:title>
+				</form:SimpleForm>
+			</content>
+		</Page>
+
+		<Page id="Menu" navButtonPress="onNavBack" showNavButton="true" title="{Text02}" busy="{detailView>/busy}"
+			busyIndicatorDelay="{detailView>/delay}">
+			<content>
+				<!-- For client side filtering add this to the items attribute:  parameters: {operationMode: 'Client'}}" -->
+				<List id="list" items="{ path: '/TtMasterSet', sorter: { path: 'Text02', descending: false }, groupHeaderFactory: '.createGroupHeader' }"
+					busyIndicatorDelay="{masterView>/delay}" noDataText="{masterView>/noDataText}"
+					mode="{= ${device>/system/phone} ? 'None' : 'SingleSelectMaster'}" growing="true" growingScrollToLoad="true"
+					updateFinished="onUpdateFinished" selectionChange="onSelectionChange">
+					<ObjectListItem type="{device>/listItemType}" press="handleListItemPress" title="{Text02}" number="{Text03}" numberUnit="{Text04}">
+						<attributes>
+							<ObjectAttribute text="{Text05}"/>
+							<ObjectAttribute text="{Text02}" visible="false"/>
+						</attributes>
+					</ObjectListItem>
+					<!--<items>-->
+					<!--	<ObjectListItem type="{= ${device>/system/phone} ? 'Active' : 'Inactive'}" press="onSelectionChange" title="{Text02}"></ObjectListItem>-->
+					<!--</items>-->
+				</List>
+			</content>
+		</Page>
+		
+	</App>
+</mvc:View>
